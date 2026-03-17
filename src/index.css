@@ -36,10 +36,11 @@
 
     --radius: 0.75rem;
 
-    --hero-overlay: linear-gradient(135deg, hsla(145, 63%, 18%, 0.85), hsla(145, 63%, 28%, 0.7));
+    --hero-overlay: linear-gradient(135deg, hsla(150, 40%, 8%, 0.75), hsla(145, 63%, 18%, 0.55));
     --section-green: 145 50% 22%;
     --section-light: 120 20% 96%;
     --gold: 40 85% 55%;
+    --gold-light: 40 85% 65%;
   }
 
   .dark {
@@ -96,5 +97,31 @@
   }
   .gradient-gold {
     background: linear-gradient(135deg, hsl(40, 85%, 50%), hsl(40, 85%, 60%));
+  }
+  .glass {
+    background: hsla(0, 0%, 100%, 0.08);
+    backdrop-filter: blur(16px);
+    border: 1px solid hsla(0, 0%, 100%, 0.15);
+  }
+  .glass-dark {
+    background: hsla(150, 30%, 5%, 0.4);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsla(0, 0%, 100%, 0.1);
+  }
+  .text-shadow-hero {
+    text-shadow: 0 2px 20px hsla(0, 0%, 0%, 0.4);
+  }
+  .card-lift {
+    @apply transition-all duration-500;
+  }
+  .card-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px -12px hsla(145, 63%, 28%, 0.2);
+  }
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--gold-light)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
