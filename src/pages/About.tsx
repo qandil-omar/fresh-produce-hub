@@ -64,7 +64,7 @@ const About = () => {
               <div className="grid grid-cols-2 gap-4 text-sm">
                 <div className="flex items-center gap-2 text-foreground">
                   <div className="w-2 h-2 rounded-full bg-gold" />
-                  +441 شحنة ناجحة
+                  +1800 شحنة تصدير
                 </div>
                 <div className="flex items-center gap-2 text-foreground">
                   <div className="w-2 h-2 rounded-full bg-gold" />
@@ -91,16 +91,16 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                نمتلك تشكيلة مميزة من أفضل المنتجات المجمدة المصرية، اكتسبت سمعة طيبة في الأسواق الدولية على مدى سنوات من العمل المتواصل والتطوير المستمر.
+                نقدم لعملائنا مجموعة واسعة من المنتجات المجمدة تحت علامتنا التجارية الخاصة <span className="text-primary font-bold">Agro Plus</span>، والتي اكتسبت ثقة المستوردين في الأسواق الدولية بفضل الجودة الفائقة والاعتمادية.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                مع الطقس المشمس في مصر والتربة الخصبة التي يرويها نهر النيل، نوفر أعلى جودة من الفواكه والخضروات الطازجة المجمدة لعملائنا حول العالم.
+                كما نوفر خدمة التعبئة بالملصق الخاص بك (Private Label) وأحجام عبوات مختلفة تناسب جميع قطاعات الجملة والتجزئة والمصانع (من أكياس 400 جرام حتى كراتين 10 كجم).
               </p>
               <ul className="space-y-2 text-foreground">
-                <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-primary" /> فواكه وخضروات مجمدة فاخرة</li>
-                <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-primary" /> تلبية جميع متطلبات العملاء</li>
-                <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-primary" /> سهلة التحضير والاستخدام</li>
-                <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-primary" /> تشكيلة متنوعة من المنتجات المميزة</li>
+                <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-primary" /> تعبئة مرنة تناسب جميع الطلبات التجارية (B2B)</li>
+                <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-primary" /> حصاد في بداية الموسم لضمان أفضل سعر وجودة</li>
+                <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-primary" /> تقطيع آلي ميكانيكياً لضمان النظافة وثبات الحجم</li>
+                <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-primary" /> توريد مستدام على مدار العام</li>
               </ul>
             </motion.div>
             <motion.img

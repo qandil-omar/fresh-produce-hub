@@ -17,7 +17,7 @@ const SectionTitle = ({ subtitle, title, light }: SectionTitleProps) => (
     <span className={`inline-block text-sm font-bold tracking-wider uppercase mb-3 px-4 py-1.5 rounded-full ${light ? "bg-primary-foreground/10 text-gold" : "bg-primary/10 text-primary"}`}>
       {subtitle}
     </span>
-    <h2 className={`text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight ${light ? "text-primary-foreground" : "text-foreground"}`}>
+    <h2 className={`text-3xl md:text-4xl lg:text-5xl font-extrabold leading-loose ${light ? "text-primary-foreground" : "text-foreground"}`}>
       {title}
     </h2>
     <div className="flex items-center justify-center gap-2 mt-5">

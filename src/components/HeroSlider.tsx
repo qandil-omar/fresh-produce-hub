@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 import heroStrawberries from "@/assets/hero-strawberries.jpg";
 import heroFarm from "@/assets/hero-farm.jpg";
 import heroMixed from "@/assets/hero-mixed.jpg";
@@ -55,9 +55,9 @@ const HeroSlider = () => {
   }, [next]);
 
   return (
-    <section className="relative h-screen max-h-[900px] min-h-[600px] overflow-hidden">
+    <section className="relative h-[80vh] md:h-screen max-h-[800px] md:max-h-[900px] min-h-[450px] md:min-h-[600px] overflow-hidden">
       {/* Background Images */}
-      <AnimatePresence mode="wait" custom={direction}>
+      <AnimatePresence mode="wait" custom={direction} initial={false}>
         <motion.div
           key={current}
           custom={direction}
@@ -71,6 +71,7 @@ const HeroSlider = () => {
             src={slides[current].image}
             alt={slides[current].title}
             className="w-full h-full object-cover"
+            loading={current === 0 ? "eager" : "lazy"}
           />
           <div className="absolute inset-0 hero-gradient" />
           {/* Extra dark overlay at bottom for depth */}
@@ -99,7 +100,7 @@ const HeroSlider = () => {
               <p className="text-gold text-lg md:text-xl mb-4 font-semibold tracking-wide">
                 {slides[current].subtitle}
               </p>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-primary-foreground leading-[1.1] mb-8 text-shadow-hero">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-primary-foreground !leading-[1.4] mb-8 text-shadow-hero">
                 {slides[current].title}
               </h1>
               <div className="flex items-center gap-4">
@@ -121,8 +122,8 @@ const HeroSlider = () => {
         </div>
       </div>
 
-      {/* Navigation Arrows */}
-      <div className="absolute left-6 top-1/2 -translate-y-1/2 z-10">
+      {/* Desktop Navigation Arrows */}
+      <div className="absolute left-6 top-1/2 -translate-y-1/2 z-10 hidden md:block">
         <button
           onClick={prev}
           className="glass rounded-full p-3 text-primary-foreground hover:bg-primary-foreground/20 transition-all"
@@ -130,12 +131,28 @@ const HeroSlider = () => {
           <ChevronLeft size={24} />
         </button>
       </div>
-      <div className="absolute right-6 top-1/2 -translate-y-1/2 z-10">
+      <div className="absolute right-6 top-1/2 -translate-y-1/2 z-10 hidden md:block">
         <button
           onClick={next}
           className="glass rounded-full p-3 text-primary-foreground hover:bg-primary-foreground/20 transition-all"
         >
           <ChevronRight size={24} />
+        </button>
+      </div>
+
+      {/* Mobile Navigation Arrows */}
+      <div className="absolute bottom-0 left-0 z-20 flex bg-background md:hidden">
+        <button
+          onClick={next}
+          className="px-6 py-5 text-foreground hover:bg-muted transition-colors border-l border-border"
+        >
+          <ArrowRight size={24} strokeWidth={1.5} />
+        </button>
+        <button
+          onClick={prev}
+          className="px-6 py-5 text-foreground hover:bg-muted transition-colors"
+        >
+          <ArrowLeft size={24} strokeWidth={1.5} />
         </button>
       </div>
 

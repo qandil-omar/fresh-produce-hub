@@ -16,9 +16,9 @@ const Navbar = () => {
       <div className="gradient-green text-primary-foreground py-2 text-sm">
         <div className="container flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <a href="tel:+201234567890" className="flex items-center gap-1 hover:text-gold transition-colors">
+            <a href="tel:+201010122421" className="flex items-center gap-1 hover:text-gold transition-colors">
               <Phone size={14} />
-              <span>+20 123 456 7890</span>
+              <span>01010122421</span>
             </a>
             <a href="mailto:info@agroplus-eg.com" className="hidden sm:flex items-center gap-1 hover:text-gold transition-colors">
               <Mail size={14} />
@@ -46,6 +46,7 @@ const Navbar = () => {
             <Link to="/about" className={`font-semibold transition-colors hover:text-primary ${isActive("/about") ? "text-primary" : "text-foreground"}`}>
               عن الشركة
             </Link>
+
             <div className="relative group">
               <button className="flex items-center gap-1 font-semibold transition-colors hover:text-primary text-foreground">
                 المنتجات
@@ -60,6 +61,9 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
+            <Link to="/gallery" className={`font-semibold transition-colors hover:text-primary ${isActive("/gallery") ? "text-primary" : "text-foreground"}`}>
+              معرض الصور
+            </Link>
             <Link to="/contact" className={`font-semibold transition-colors hover:text-primary ${isActive("/contact") ? "text-primary" : "text-foreground"}`}>
               اتصل بنا
             </Link>
@@ -81,6 +85,7 @@ const Navbar = () => {
             <div className="container flex flex-col gap-2 pt-2">
               <Link to="/" onClick={() => setIsOpen(false)} className="py-2 font-semibold hover:text-primary">الرئيسية</Link>
               <Link to="/about" onClick={() => setIsOpen(false)} className="py-2 font-semibold hover:text-primary">عن الشركة</Link>
+
               <button onClick={() => setProductsOpen(!productsOpen)} className="py-2 font-semibold hover:text-primary text-right flex items-center gap-1">
                 المنتجات <ChevronDown size={16} className={`transition-transform ${productsOpen ? "rotate-180" : ""}`} />
               </button>
@@ -90,6 +95,7 @@ const Navbar = () => {
                   <Link to="/vegetables" onClick={() => setIsOpen(false)} className="py-2 text-muted-foreground hover:text-primary">خضروات مجمدة</Link>
                 </div>
               )}
+              <Link to="/gallery" onClick={() => setIsOpen(false)} className="py-2 font-semibold hover:text-primary">معرض الصور</Link>
               <Link to="/contact" onClick={() => setIsOpen(false)} className="py-2 font-semibold hover:text-primary">اتصل بنا</Link>
             </div>
           </div>

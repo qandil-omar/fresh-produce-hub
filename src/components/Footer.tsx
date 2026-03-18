@@ -9,7 +9,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo & About */}
           <div>
-            <img src={logo} alt="Agro Plus" className="h-20 w-auto mb-4 brightness-0 invert" />
+            <div className="bg-white p-4 rounded-xl inline-block mb-5 shadow-lg">
+              <img src={logo} alt="Agro Plus" className="h-14 max-w-[150px] object-contain" />
+            </div>
             <p className="text-primary-foreground/80 leading-relaxed text-sm">
               أجرو بلس شركة مصرية رائدة في تصدير الفواكه والخضروات المجمدة بتقنية التبريد السريع IQF، نقدم أجود المنتجات المصرية للأسواق العالمية.
             </p>
@@ -21,6 +23,7 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               <Link to="/" className="text-primary-foreground/80 hover:text-gold transition-colors text-sm">الرئيسية</Link>
               <Link to="/about" className="text-primary-foreground/80 hover:text-gold transition-colors text-sm">عن الشركة</Link>
+              <Link to="/gallery" className="text-primary-foreground/80 hover:text-gold transition-colors text-sm">معرض الصور</Link>
               <Link to="/fruits" className="text-primary-foreground/80 hover:text-gold transition-colors text-sm">فاكهة مجمدة</Link>
               <Link to="/vegetables" className="text-primary-foreground/80 hover:text-gold transition-colors text-sm">خضروات مجمدة</Link>
               <Link to="/contact" className="text-primary-foreground/80 hover:text-gold transition-colors text-sm">اتصل بنا</Link>
@@ -31,12 +34,12 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4 text-gold">منتجاتنا</h3>
             <div className="flex flex-col gap-2 text-sm text-primary-foreground/80">
-              <span>فراولة مجمدة</span>
-              <span>مانجو مجمدة</span>
-              <span>بازلاء مجمدة</span>
-              <span>خضروات مشكلة</span>
-              <span>بروكلي مجمد</span>
-              <span>بامية مجمدة</span>
+              <Link to="/product/frozen-strawberry" className="hover:text-gold transition-colors">فراولة مجمدة</Link>
+              <Link to="/product/frozen-mango" className="hover:text-gold transition-colors">مانجو مجمدة</Link>
+              <Link to="/product/frozen-peas" className="hover:text-gold transition-colors">بازلاء مجمدة</Link>
+              <Link to="/product/frozen-mixed-vegetables" className="hover:text-gold transition-colors">خضروات مشكلة</Link>
+              <Link to="/product/frozen-broccoli" className="hover:text-gold transition-colors">بروكلي مجمد</Link>
+              <Link to="/product/frozen-okra" className="hover:text-gold transition-colors">بامية مجمدة</Link>
             </div>
           </div>
 
@@ -44,13 +47,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4 text-gold">تواصل معنا</h3>
             <div className="flex flex-col gap-3">
-              <a href="tel:+201234567890" className="flex items-center gap-2 text-primary-foreground/80 hover:text-gold transition-colors text-sm">
+              <a href="tel:+201010122421" className="flex items-center gap-2 text-primary-foreground/80 hover:text-gold transition-colors text-sm">
                 <Phone size={16} />
-                <span>+20 123 456 7890</span>
-              </a>
-              <a href="tel:+201234567891" className="flex items-center gap-2 text-primary-foreground/80 hover:text-gold transition-colors text-sm">
-                <Phone size={16} />
-                <span>+20 123 456 7891</span>
+                <span>01010122421</span>
               </a>
               <a href="mailto:info@agroplus-eg.com" className="flex items-center gap-2 text-primary-foreground/80 hover:text-gold transition-colors text-sm">
                 <Mail size={16} />

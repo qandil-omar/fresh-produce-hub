@@ -23,8 +23,7 @@ const Contact = () => {
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-foreground">بيانات التواصل</h3>
                 {[
-                  { icon: Phone, label: "إدارة المبيعات", value: "+20 123 456 7890", href: "tel:+201234567890" },
-                  { icon: Phone, label: "خط ثانٍ", value: "+20 123 456 7891", href: "tel:+201234567891" },
+                  { icon: Phone, label: "إدارة المبيعات", value: "01010122421", href: "tel:+201010122421" },
                   { icon: Mail, label: "البريد الإلكتروني", value: "info@agroplus-eg.com", href: "mailto:info@agroplus-eg.com" },
                   { icon: Clock, label: "ساعات العمل", value: "السبت - الخميس: 9 صباحاً - 5 مساءً", href: null },
                 ].map((item, i) => (

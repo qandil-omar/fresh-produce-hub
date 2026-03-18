@@ -44,10 +44,10 @@ const whyUs = [
 ];
 
 const stats = [
-  { value: 5000, label: "طن", sublabel: "سعة تخزينية", suffix: "+" },
-  { value: 10, label: "سنوات", sublabel: "من الخبرة", suffix: "+" },
+  { value: 3000, label: "طن", sublabel: "سعة تخزينية", suffix: "+" },
+  { value: 1800, label: "شحنة", sublabel: "تصدير عالمية", suffix: "+" },
   { value: 7, label: "فاكهة", sublabel: "مجمدة", suffix: "" },
-  { value: 17, label: "خضروات", sublabel: "مجمدة", suffix: "" },
+  { value: 16, label: "خضار", sublabel: "مجمد", suffix: "" },
 ];
 
 const Index = () => {
@@ -121,7 +121,7 @@ const Index = () => {
               <span className="inline-block text-sm font-bold tracking-wider uppercase mb-3 px-4 py-1.5 rounded-full bg-primary/10 text-primary">
                 مرحباً بكم في أجرو بلس
               </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mt-3 mb-6 leading-tight">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mt-3 mb-6 leading-loose">
                 متخصصون في إنتاج وتصدير الفواكه والخضروات المجمدة
               </h2>
               <p className="text-muted-foreground leading-loose mb-4 text-lg">
@@ -271,6 +271,31 @@ const Index = () => {
         </div>
       </section>
 
+      {/* ══════ Certifications ══════ */}
+      <section className="py-16 bg-card border-y border-border">
+        <div className="container text-center">
+          <p className="text-muted-foreground font-semibold mb-8 uppercase tracking-widest text-sm">شهادات الجودة والاعتمادات الدولية</p>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-80 hover:opacity-100 transition-opacity duration-500">
+            <div className="flex flex-col items-center justify-center gap-2">
+              <div className="w-20 h-20 rounded-full border-4 border-primary/30 flex items-center justify-center text-primary font-extrabold text-2xl shadow-sm">FDA</div>
+              <span className="text-xs font-semibold text-muted-foreground">هيئة الدواء والغذاء</span>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-2">
+              <div className="w-20 h-20 rounded-full border-4 border-primary/30 flex items-center justify-center text-primary font-bold text-xl shadow-sm">ISO</div>
+              <span className="text-xs font-semibold text-muted-foreground">9001:2015</span>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-2">
+              <div className="w-20 h-20 rounded-full border-4 border-primary/30 flex items-center justify-center text-primary font-bold text-xl shadow-sm">ISO</div>
+              <span className="text-xs font-semibold text-muted-foreground">22000:2018</span>
+            </div>
+             <div className="flex flex-col items-center justify-center gap-2">
+              <div className="w-20 h-20 rounded-full border-4 border-primary/30 flex items-center justify-center text-primary font-extrabold text-xl shadow-sm">GACC</div>
+              <span className="text-xs font-semibold text-muted-foreground">الجمارك الصينية</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ══════ CTA ══════ */}
       <section className="py-24 gradient-green relative overflow-hidden">
         {/* Decorative circles */}
@@ -287,7 +312,7 @@ const Index = () => {
             <span className="inline-block text-sm font-bold tracking-wider uppercase mb-4 px-4 py-1.5 rounded-full bg-primary-foreground/10 text-gold">
               ضمان الجودة
             </span>
-            <h2 className="text-3xl md:text-5xl font-extrabold text-primary-foreground mb-6 leading-tight">
+            <h2 className="text-3xl md:text-5xl font-extrabold text-primary-foreground mb-6 leading-loose">
               عمليات فحص دقيقة <br /> من الحصاد إلى التغليف
             </h2>
             <p className="text-primary-foreground/70 mb-10 max-w-2xl mx-auto text-lg leading-relaxed">
