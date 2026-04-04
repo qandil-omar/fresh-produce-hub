@@ -103,16 +103,16 @@ const HeroSlider = () => {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-primary-foreground !leading-[1.4] mb-8 text-shadow-hero">
                 {slides[current].title}
               </h1>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-3 sm:gap-4">
                 <Link
                   to={slides[current].link}
-                  className="inline-flex items-center gap-2 bg-gold text-accent-foreground px-8 py-4 rounded-xl font-bold text-lg hover:brightness-110 transition-all hover:scale-105 active:scale-95 shadow-lg"
+                  className="inline-flex items-center gap-2 bg-gold text-accent-foreground px-5 py-3 md:px-8 md:py-4 rounded-xl font-bold text-base md:text-lg hover:brightness-110 transition-all hover:scale-105 active:scale-95 shadow-lg"
                 >
                   {slides[current].cta}
                 </Link>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center gap-2 glass text-primary-foreground px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-foreground/20 transition-all"
+                  className="inline-flex items-center gap-2 glass text-primary-foreground px-5 py-3 md:px-8 md:py-4 rounded-xl font-bold text-base md:text-lg hover:bg-primary-foreground/20 transition-all"
                 >
                   تواصل معنا
                 </Link>

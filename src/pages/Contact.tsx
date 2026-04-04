@@ -23,7 +23,7 @@ const Contact = () => {
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-foreground">بيانات التواصل</h3>
                 {[
-                  { icon: Phone, label: "إدارة المبيعات", value: "01010122421", href: "tel:+201010122421" },
+                  { icon: Phone, label: "إدارة المبيعات", value: "+20 1010122421", href: "https://wa.me/201010122421" },
                   { icon: Mail, label: "البريد الإلكتروني", value: "info@agroplus-eg.com", href: "mailto:info@agroplus-eg.com" },
                   { icon: Clock, label: "ساعات العمل", value: "السبت - الخميس: 9 صباحاً - 5 مساءً", href: null },
                 ].map((item, i) => (
@@ -41,7 +41,7 @@ const Contact = () => {
                     <div>
                       <p className="text-sm text-muted-foreground">{item.label}</p>
                       {item.href ? (
-                        <a href={item.href} className="font-semibold text-foreground hover:text-primary transition-colors">{item.value}</a>
+                        <a href={item.href} target="_blank" rel="noopener noreferrer" dir="ltr" className="font-semibold text-foreground hover:text-primary transition-colors">{item.value}</a>
                       ) : (
                         <p className="font-semibold text-foreground">{item.value}</p>
                       )}
@@ -69,7 +69,11 @@ const Contact = () => {
               viewport={{ once: true }}
               className="lg:col-span-2 bg-card p-8 rounded-2xl shadow-lg border border-border"
             >
-              <SectionTitle subtitle="تواصل معنا الآن" title="لا تتردد في التواصل معنا في أي وقت" />
+              <SectionTitle 
+                subtitle="تواصل معنا الآن" 
+                title="لا تتردد في التواصل معنا في أي وقت" 
+                titleSize="text-2xl md:text-3xl lg:text-4xl"
+              />
               <p className="text-muted-foreground text-center mb-8 -mt-6">
                 يرجى ملء النموذج التالي وسنقوم بالرد عليكم في أقرب وقت ممكن.
               </p>

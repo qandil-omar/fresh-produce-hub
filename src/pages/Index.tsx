@@ -45,7 +45,7 @@ const whyUs = [
 
 const stats = [
   { value: 3000, label: "طن", sublabel: "سعة تخزينية", suffix: "+" },
-  { value: 1800, label: "شحنة", sublabel: "تصدير عالمية", suffix: "+" },
+  { value: 500, label: "شحنة", sublabel: "تصدير عالمية", suffix: "+" },
   { value: 7, label: "فاكهة", sublabel: "مجمدة", suffix: "" },
   { value: 16, label: "خضار", sublabel: "مجمد", suffix: "" },
 ];
@@ -58,7 +58,7 @@ const Index = () => {
       {/* ══════ Values ══════ */}
       <section className="py-20 -mt-1 relative z-10">
         <div className="container">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {values.map((v, i) => (
               <motion.div
                 key={i}
@@ -105,7 +105,7 @@ const Index = () => {
                 transition={{ delay: 0.5 }}
                 className="absolute -bottom-8 -left-4 lg:-left-8 bg-primary text-primary-foreground rounded-2xl p-6 shadow-2xl z-20"
               >
-                <span className="text-5xl font-extrabold gradient-text">10+</span>
+                <span className="text-5xl font-extrabold gradient-text">8+</span>
                 <p className="text-sm mt-1 text-primary-foreground/80">سنوات من التميز</p>
               </motion.div>
               {/* Background decoration */}
@@ -192,7 +192,7 @@ const Index = () => {
       <section className="py-24 section-light">
         <div className="container">
           <SectionTitle subtitle="من أجود المنتجات المصرية" title="أبرز منتجاتنا المجمدة" />
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {[...fruits.slice(0, 4), ...vegetables.slice(0, 4)].map((p, i) => (
               <ProductCard key={p.id} product={p} index={i} />
             ))}

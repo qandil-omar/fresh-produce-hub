@@ -48,7 +48,7 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <span className="text-gold font-semibold">مرحباً بكم في أجرو بلس للتصدير</span>
+              <span className="text-gold font-semibold">أجرو بلس للتصدير - خبرة 8 سنوات من التميز</span>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 mb-6">
                 تشكيلة واسعة من الفواكه والخضروات المجمدة بتقنية IQF
               </h2>
@@ -56,7 +56,7 @@ const About = () => {
                 أجرو بلس شركة مصرية متخصصة في تصدير مختلف أنواع الفواكه والخضروات المجمدة باستخدام تقنية التبريد السريع IQF، لنضمن لعملائنا أعلى مستويات الجودة مع خيارات تغليف متنوعة تناسب احتياجات الأسواق المختلفة.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                منذ انطلاقتنا، حرصنا على الالتزام بالمعايير الدولية للجودة والسلامة الغذائية، مما مكّننا من بناء شراكات تجارية قوية وموثوقة مع عملاء في مختلف أنحاء العالم.
+                بخبرة تزيد عن 8 سنوات في السوق المصري والعالمي، حرصنا منذ انطلاقتنا على الالتزام بالمعايير الدولية للجودة والسلامة الغذائية، مما مكّننا من بناء شراكات تجارية قوية وموثوقة مع عملاء في مختلف أنحاء العالم.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 بفضل المناخ المثالي في مصر والتربة الخصبة المروية بمياه نهر النيل، نفخر بتقديم منتجات بنكهة طبيعية فريدة وجودة استثنائية لا مثيل لها.
@@ -64,7 +64,7 @@ const About = () => {
               <div className="grid grid-cols-2 gap-4 text-sm">
                 <div className="flex items-center gap-2 text-foreground">
                   <div className="w-2 h-2 rounded-full bg-gold" />
-                  +1800 شحنة تصدير
+                  +500 شحنة تصدير
                 </div>
                 <div className="flex items-center gap-2 text-foreground">
                   <div className="w-2 h-2 rounded-full bg-gold" />
@@ -96,11 +96,11 @@ const About = () => {
               <p className="text-muted-foreground leading-relaxed mb-6">
                 كما نوفر خدمة التعبئة بالملصق الخاص بك (Private Label) وأحجام عبوات مختلفة تناسب جميع قطاعات الجملة والتجزئة والمصانع (من أكياس 400 جرام حتى كراتين 10 كجم).
               </p>
-              <ul className="space-y-2 text-foreground">
-                <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-primary" /> تعبئة مرنة تناسب جميع الطلبات التجارية (B2B)</li>
-                <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-primary" /> حصاد في بداية الموسم لضمان أفضل سعر وجودة</li>
-                <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-primary" /> تقطيع آلي ميكانيكياً لضمان النظافة وثبات الحجم</li>
-                <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-primary" /> توريد مستدام على مدار العام</li>
+              <ul className="space-y-3 text-foreground text-sm sm:text-base">
+                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" /> تعبئة مرنة تناسب جميع الطلبات التجارية (B2B)</li>
+                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" /> حصاد في بداية الموسم لضمان أفضل سعر وجودة</li>
+                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" /> تقطيع آلي ميكانيكياً لضمان النظافة وثبات الحجم</li>
+                <li className="flex items-start gap-2"><div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" /> توريد مستدام على مدار العام</li>
               </ul>
             </motion.div>
             <motion.img
